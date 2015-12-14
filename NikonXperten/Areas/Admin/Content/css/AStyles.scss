@@ -1,2 +1,10 @@
-﻿body {
+﻿@import 'AShared.scss';
+
+body {
+
+}
+
+.background
+{
+    background-color:$maincolor;
 }

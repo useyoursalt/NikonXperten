@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Areas/Admin/Content/css/AStyles.css",
+    "inputFile": "Areas/Admin/Content/css/AStyles.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/css/AShared.css",
+    "inputFile": "Areas/Admin/Content/css/AShared.scss"
+  }
+]

@@ -89,12 +89,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Content\css\AShared.css">
+      <DependentUpon>AShared.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\AStyles.css">
+      <DependentUpon>AStyles.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\AStyles.min.css">
+      <DependentUpon>AStyles.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\css\foundation.css" />
+    <Content Include="Areas\Admin\Content\css\foundation.min.css" />
+    <Content Include="Areas\Admin\Content\css\normalize.css" />
+    <Content Include="Areas\Admin\Content\js\foundation.min.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.abide.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.accordion.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.alert.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.clearing.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.dropdown.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.equalizer.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.interchange.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.joyride.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.magellan.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.offcanvas.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.orbit.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.reveal.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.slider.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.tab.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.tooltip.js" />
+    <Content Include="Areas\Admin\Content\js\foundation\foundation.topbar.js" />
+    <Content Include="Areas\Admin\Content\js\vendor\fastclick.js" />
+    <Content Include="Areas\Admin\Content\js\vendor\jquery.cookie.js" />
+    <Content Include="Areas\Admin\Content\js\vendor\jquery.js" />
+    <Content Include="Areas\Admin\Content\js\vendor\modernizr.js" />
+    <Content Include="Areas\Admin\Content\js\vendor\placeholder.js" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Views\AdminDefault\Index.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminDefaultController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -109,6 +156,14 @@
     <Content Include="Areas\Admin\Views\Shared\AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Content\css\AShared.scss" />
     <Content Include="Areas\Admin\Content\css\AStyles.scss" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,9 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Content\js\" />
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Content\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <PropertyGroup>
