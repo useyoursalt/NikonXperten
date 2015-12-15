@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepoNX.Models.BaseModels
 {
-  public  class Kontakt
+  public class Kontakt
     {
         public int ID { get; set; }
         public string Navn { get; set; }
