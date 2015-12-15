@@ -142,6 +142,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminDefaultController.cs" />
+    <Compile Include="Areas\Admin\Controllers\aKategoriController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -173,7 +174,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\aKategori\" />
     <Folder Include="Views\Default\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepoNX\RepoNX.csproj">
+      <Project>{82b5e3b4-e276-43a2-8bc6-3fdadea0e16b}</Project>
+      <Name>RepoNX</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
