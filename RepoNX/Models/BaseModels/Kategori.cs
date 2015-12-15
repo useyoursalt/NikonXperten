@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepoNX.Models.BaseModels
+namespace RepoNX
 {
    public class Kategori
     {
