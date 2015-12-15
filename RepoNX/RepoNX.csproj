@@ -44,11 +44,15 @@
     <Compile Include="Duser\AutoPager.cs" />
     <Compile Include="Duser\Conn.cs" />
     <Compile Include="Duser\Mapper.cs" />
+    <Compile Include="Factories\KontaktFac.cs" />
+    <Compile Include="Models\BaseModels\Kategori.cs" />
+    <Compile Include="Models\BaseModels\Kontakt.cs" />
+    <Compile Include="Models\BaseModels\Level.cs" />
+    <Compile Include="Models\BaseModels\OmOs.cs" />
+    <Compile Include="Models\BaseModels\Produkter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Factories\" />
-    <Folder Include="Models\BaseModels\" />
     <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
