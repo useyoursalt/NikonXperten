@@ -133,6 +133,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\AdminDefault\Index.cshtml" />
     <Content Include="Areas\Admin\Views\aKategori\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\aKategori\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\aKategori\EditForm.cshtml" />
+    <Content Include="Areas\Admin\Views\aKategori\EditResult.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
