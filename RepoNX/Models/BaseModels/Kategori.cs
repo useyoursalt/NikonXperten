@@ -8,7 +8,7 @@ namespace RepoNX
 {
    public class Kategori
     {
-        public int id { get; set; }
+        public int ID { get; set; }
         public string Navn { get; set; }
         public int Sortering { get; set; }
     }

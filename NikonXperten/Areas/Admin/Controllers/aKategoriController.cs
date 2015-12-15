@@ -10,6 +10,7 @@ namespace NikonXperten.Areas.Admin.Controllers
     public class aKategoriController : Controller
     {
         KategoriFac kf = new KategoriFac();
+
         // GET: Admin/aKategori
         public ActionResult Index()
         {
