@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Your page title here :)</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="~/Content/CSS/MainSheet.css" rel="stylesheet" />
+    <link href="~/Content/CSS/normalize.css" rel="stylesheet" />
+    <link href="~/Content/CSS/skeleton.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="~/Content/Scripts/Slider.js"></script>
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+    <div class="container">
+        <div class="rown">
+            <div class="twelve columns">
+                <img src="~/Content/Images/Banner.png" />
+            </div>
+        </div>
+
+        <div class="row margin">
+            <div class="twelve columns">
+                <nav>
+                    <ul>
+                        <li>
+                            <hr class="hr" />
+                            <a href="#">Home </a>
+                            <a href="#">Produkter</a>
+                            <a href="#">Om os</a>
+                            <a href="#">Kontakt</a>
+                            <hr />
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns bg">
+
+
+                @RenderBody()
+
+                <div class="row">
+                    <div class="twelve columns bgcopy">
+                        <hr />
+                        <h6 class="tekst">Copyright 2014 by NIKON Experten</h6>
+                        <hr />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

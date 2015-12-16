@@ -1,0 +1,83 @@
+﻿body {
+    background-color: #494949;
+}
+
+
+.hr {
+    
+}
+
+
+.SliderWrap {
+    width: 960px;
+    height: 299px;
+
+    white-space: nowrap;
+    overflow: hidden;
+  
+}
+
+
+table {
+      margin-top: 70px;
+     
+}
+
+.marginright {
+    margin-right: 100px;
+}
+
+td {
+  
+    width: 180px;
+    border: 1px solid #fbb03b;
+   
+ 
+
+    
+    
+}
+
+
+h4 {
+    font-family: Verdana;
+    color: #fbb03b; 
+}
+
+.bgprodukter {
+    background-color: black; 
+    color: white; 
+}
+
+
+nav {
+    background-color: #e0d4be;
+    height: 75px;
+
+}
+
+ul {
+   list-style-type: none;
+}
+
+li {
+     
+
+}
+
+
+.bg {
+    background-color: white;
+    min-height: 400px;
+}
+
+.tekst { 
+    margin-left: 50px;
+    color: #736e68;
+    font-family: Verdana;
+}
+
+
+.bgcopy {
+    background-color: #e0d4be;
+}
