@@ -1,0 +1,34 @@
+﻿@model RepoNX.Produkter
+@{
+    ViewBag.Title = "EditForm";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="small-12 columns background">
+        <h2>EditForm</h2>
+
+        <form name="myForm" action="/Admin/aProdukter/EditResult/" enctype="multipart/form-data" method="post">
+            VareNR: <input id="VNR" type="text" value="@Model.VareNR" />
+            <br />
+            Navn: <input id="Navn" type="text" name="Navn" value="@Model.Navn" />
+            <br />
+            Pris: <input id="Pris" type="text" name="Pris" value="@Model.Pris" />
+            <br />
+            Kategori ID: <input id="KatID" type="Number" name="KatID" value="@Model.KatID" />
+            <br />
+            Tekst: <input id="Tekst" type="text" name="Tekst" value="@Model.Beskrivelse" />
+            <br />
+            Leveringstid: <input id="Leveringstid" type="text" name="Leveringstid" value="@Model.Leveringstid" />
+            <br />
+            Producent: <input id="Producent" type="text" name="Producent" value="@Model.Producent" />
+            <br />
+            Lager Antal: <input id="LagerAntal" type="number" name="LagerAntal" value="@Model.LagerAntal" />
+            <br />
+            Billede: <img src="/Content/img/@Model.Billede" /><hr />
+            <input id="Submit1" type="submit" value="Gem" class="button success" />
+            @ViewBag.MSG<input id="Hidden1" type="hidden" name="ID" value="@Model.ID" />
+        </form>
+    </div>
+</div>
+
+

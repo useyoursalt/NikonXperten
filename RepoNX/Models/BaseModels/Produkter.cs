@@ -17,6 +17,7 @@ namespace RepoNX
         public string Producent { get; set; }
         public int LagerAntal { get; set; }
         public int KatID { get; set; }
+        public string Pris { get; set; }
 
     }
 }

@@ -1,0 +1,21 @@
+﻿@using RepoNX
+@model List<Produkter>
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="small-12 columns background">
+        <h2>Edit</h2>
+
+        <ul>
+
+            @foreach (Produkter pro in Model)
+            {
+                <li>@pro.Navn <a href="/Admin/aProdukter/EditForm/@pro.ID/">Rediger</a> <a href="/Admin/aProdukter/Delete/@pro.ID/">Slet</a></li>
+            }
+
+        </ul>
+    </div>
+</div>
+
