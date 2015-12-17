@@ -1,25 +1,22 @@
 ﻿
 @{
     ViewBag.Title = "Index";
-    Layout = "Views/SharedLayout/_LayoutPage1";
+    Layout = "~/Views/SharedLayout/_LayoutPage1.cshtml";
 }
-<div class="row">
-    <div class="small-12 columns">
         <h2>Index</h2>
+<center>
+    <form name="myForm" action="/Bruger/Login/" enctype="multipart/form-data" method="post">
+        Email:
+        <input id="Email" type="text" name="Email" />
+        <br />
+        Kodeord:
+        <input id="Password" type="text" name="Password" />
+        <br />
+        <input id="Submit1" type="submit" value="Log-in" />
+        @ViewBag.MSG
 
-        <form name="myForm" action="/Bruger/Login/" enctype="multipart/form-data" method="post">
-            Email:
-            <input id="Email" type="text" name="Email" />
-            <br />
-            Kodeord:
-            <input id="Password" type="text" name="Password" />
-            <br />
-            <input id="Submit1" type="submit" value="Log-in" class="button large success" />
-            @ViewBag.MSG
-
-            @Crypto.Hash("admin")
-
-        </form>
-    </div>
-</div>
+    </form>
+</center>
+        
+    
 
