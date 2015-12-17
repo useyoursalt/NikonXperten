@@ -1,0 +1,26 @@
+﻿@using RepoNX
+@model List<Kategori>
+   
+@{
+    ViewBag.Title = "Kategorier";
+    Layout = "~/Views/SharedLayout/_LayoutPage1.cshtml";
+}
+
+<form name="myForm" action="~/Produkter/" enctype="multipart/form-data" method="post">
+    <div class="six columns">
+        <h2>Edit</h2>
+        @foreach (Kategori kat in Model)
+        {
+
+
+
+
+            <a href="/Produkter/ValgtProd/@kat.ID/">@kat.Navn</a> <br />
+
+
+        }
+
+    </div>
+
+
+</form>

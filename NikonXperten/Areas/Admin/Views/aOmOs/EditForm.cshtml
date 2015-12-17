@@ -1,0 +1,24 @@
+﻿@model RepoNX.OmOs
+@{
+    ViewBag.Title = "EditForm";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="small-12 columns background">
+        <h2>EditForm</h2>
+
+        <form name="myForm" action="/Admin/aOmOs/EditResult/" enctype="multipart/form-data"  method="post">
+            Overskrift: <input id="Overskrift" type="text" name="Overskrift" value="@Model.Overskrift" />
+            <br />
+            Tekst: <textarea id="tekst" rows="10" cols="20" name="tekst">@Model.Tekst</textarea>
+            <br />
+            Billede: <img src="~/Content/img/@Model.Billede" />
+            <br />
+            <hr />
+            <input id="Submit1" type="submit" value="Gem" class="button success" />
+            @ViewBag.MSG<input id="Hidden1" type="hidden" name="ID" value="@Model.ID" />
+            <input id="Hidden2" type="hidden" name="Billede" value="@Model.Billede" />
+        </form>
+    </div>
+</div>
+

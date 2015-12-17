@@ -1,0 +1,45 @@
+﻿@using RepoNX
+@model List<RepoNX.Kategori>
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="small-12 columns background">
+        <h2>Add</h2>
+
+        <form name="myForm" action="/Admin/aProdukter/AddResult/" enctype="multipart/form-data" method="post">
+
+            Kategori:
+            <select name="KatID">
+                @foreach (Kategori k in Model)
+                {
+                    <option value="@k.ID">@k.Navn</option>
+                }
+            </select>
+            <br />
+            Vare Nummer: <input id="VareNR" type="number" name="VareNR" />
+            <br />
+            Navn: <input id="Navn" type="text" name="Navn" />
+            <br />
+            Pris <input id="Pris" type="text" name="Pris" />
+            <br />
+            Beskrivelse:
+            <textarea id="TextArea1" rows="2" cols="20" name="Beskrivelse"></textarea>
+            <br />
+            Leveringstid: <input id="Leveringstid" type="text" name="Leveringstid" />
+            <br />
+            Producent: <input id="Producent" type="text" name="Producent" />
+            <br />
+            Lager Antal: <input id="LagerAntal" type="number" name="LagerAntal" />
+            <br />
+            <input id="File1" type="file" name="Fil" />
+            <br />
+            <input id="Submit1" type="submit" value="Gem" class="button success" />
+            @ViewBag.MSG
+        </form>
+    </div>
+</div>
+
+
+

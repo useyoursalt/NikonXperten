@@ -11,5 +11,6 @@ namespace RepoNX
         public int ID { get; set; }
         public string Navn { get; set; }
         public int Sortering { get; set; }
+        public string Billede { get; set; }
     }
 }

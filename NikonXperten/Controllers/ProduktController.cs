@@ -6,15 +6,10 @@ using System.Web.Mvc;
 
 namespace NikonXperten.Controllers
 {
-    public class DefaultController : Controller
+    public class ProdukterController : Controller
     {
-        // GET: Default
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult OmOs()
+        // GET: Produkt
+        public ActionResult Produkter()
         {
             return View();
         }

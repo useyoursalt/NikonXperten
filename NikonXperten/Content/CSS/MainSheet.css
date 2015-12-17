@@ -17,7 +17,9 @@
   
 }
 
-
+.padding {
+    padding: 20px;
+}
 table {
       margin-top: 70px;
      
@@ -27,15 +29,36 @@ table {
     margin-right: 100px;
 }
 
-td {
-  
-    width: 180px;
-    border: 1px solid #fbb03b;
-   
- 
+nav{
+    background-color: #fcaf3d;
+    margin:0px !important;
+}
+li{
+    margin-left:75px;
+    display:inline;
+}
+ul{
+    margin: 0px 0px 0px 195px;   
+}
+a, a:hover, a:after, a:active{
+    color:black;
+    text-decoration:none;
+}
 
-    
-    
+
+.h4forside{
+    color:#fcaf3d;
+    margin:0 !important;
+}
+.pforside{
+    margin:0 !important;
+    color:white;
+    font-size:13px;
+}
+.produkt{
+    border:1px solid #ff6a00;
+    background-color:#1d1d1d;
+    height:250px;
 }
 
 

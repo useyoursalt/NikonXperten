@@ -1,0 +1,21 @@
+﻿@model RepoNX.Kategori
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="small-12 columns background">
+        <h2>Tilføj en Kategori</h2>
+        <form name="myForm" action="/Admin/aKategori/AddKat/" enctype="multipart/form-data" method="post">
+            Navn:<input id="Navn" type="text" name="Navn" />
+            <br />
+            Sortering:<input id="Sortering" type="text" name="Sortering" />
+            <br />
+            <input id="Submit1" type="submit" value="Opret" class="button success" />
+            @ViewBag.MSG
+        </form>
+    </div>
+</div>
+
+
+
