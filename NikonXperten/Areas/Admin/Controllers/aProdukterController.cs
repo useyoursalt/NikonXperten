@@ -14,11 +14,14 @@ namespace NikonXperten.Areas.Admin.Controllers
         ProdukterFac pf = new ProdukterFac();
         Uploader u = new Uploader();
         // GET: Admin/aProdukter
+
+        [Authorize]
         public ActionResult Add()
         {
             return View(kf.GetAll());
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult AddResult(Produkter pro, HttpPostedFileBase fil)
         {
@@ -38,16 +41,19 @@ namespace NikonXperten.Areas.Admin.Controllers
             return View("Add", kf.GetAll());
         }
 
+        [Authorize]
         public ActionResult Edit()
         {
             return View(pf.GetAll());
         }
 
+        [Authorize]
         public ActionResult EditForm(int id)
         {
             return View(pf.Get(id));
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult EditResult(Produkter pro)
         {
@@ -59,7 +65,7 @@ namespace NikonXperten.Areas.Admin.Controllers
             return RedirectToAction("Edit");
         }
 
-
+        [Authorize]
         public ActionResult Delete(int id)
         {
             pf.Delete(id);

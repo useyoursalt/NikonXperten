@@ -11,13 +11,14 @@ namespace NikonXperten.Areas.Admin.Controllers
     {
         KontaktFac kf = new KontaktFac();
         Uploader u = new Uploader();
-        
 
+        [Authorize]
         public ActionResult EditForm()
         {
             return View(kf.Get(1));
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult EditResult(Kontakt kon)
         {

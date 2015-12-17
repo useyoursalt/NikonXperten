@@ -171,6 +171,7 @@
     <Compile Include="Areas\Admin\Controllers\aKontaktController.cs" />
     <Compile Include="Areas\Admin\Controllers\aOmOsController.cs" />
     <Compile Include="Areas\Admin\Controllers\aProdukterController.cs" />
+    <Compile Include="Controllers\BrugerController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,8 +194,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\SharedLayout\_LayoutPage1.cshtml" />
-    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Bruger\Secret.cshtml" />
+    <Content Include="Views\Bruger\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
