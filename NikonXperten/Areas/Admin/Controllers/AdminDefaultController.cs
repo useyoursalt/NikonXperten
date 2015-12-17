@@ -9,6 +9,7 @@ namespace NikonXperten.Areas.Admin.Controllers
     public class AdminDefaultController : Controller
     {
         // GET: Admin/AdminDefault
+        [Authorize]
         public ActionResult Index()
         {
             return View();

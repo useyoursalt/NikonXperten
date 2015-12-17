@@ -12,11 +12,13 @@ namespace NikonXperten.Areas.Admin.Controllers
         KategoriFac kf = new KategoriFac();
 
         // GET: Admin/aKategori
+        [Authorize]
         public ActionResult Index()
         {
             return View();
         }
 
+        [Authorize]
         public ActionResult AddKat(Kategori kat)
         {
             if (ModelState.IsValid)
@@ -33,16 +35,19 @@ namespace NikonXperten.Areas.Admin.Controllers
             return View("Index");
         }
 
+        [Authorize]
         public ActionResult Edit()
         {
             return View(kf.GetAll());
         }
 
+        [Authorize]
         public ActionResult EditForm(int id)
         {
             return View(kf.Get(id));
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult EditResult(Kategori kat)
         {
@@ -54,7 +59,7 @@ namespace NikonXperten.Areas.Admin.Controllers
             return RedirectToAction("Edit");
         }
 
-
+        [Authorize]
         public ActionResult Delete(int id)
         {
             kf.Delete(id);
